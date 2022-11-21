@@ -93,10 +93,12 @@ python3 manage.py makemigrations api
 python3 manage.py sqlmigrate api 0001
 python3 manage.py migrate
 
+curl -H 'Accept: application/json; indent=4' http://127.0.0.1:8000/api/listings/ 
 ## Time Spent
 *Give us a rough estimate of the time you spent working on this. If you spent time learning in order to do this project please feel free to let us know that too.*
 *This makes sure that we are evaluating your work fairly and in context. It also gives us the opportunity to learn and adjust our process if needed.*
 
+- About three - three and a half hours
 ## Assumptions
 *Did you find yourself needing to make assumptions to finish this?*
 *If so, what were they and how did they impact your design/code?*
@@ -106,7 +108,7 @@ python3 manage.py migrate
 *Provide us with some notes about what you would do next if you had more time.* 
 *Are there additional features that you would want to add? Specific improvements to your code you would make?*
 ### Features
-
+- list all the listings
 ### Testing
 
 ### Anything else needed to make this production ready?
@@ -115,3 +117,7 @@ python3 manage.py migrate
 ## How to Use
 *Provide any end user documentation you think is necessary and useful here*
 
+- pull branch locally
+- cd /listings
+- `python3 manage.py runserver`
+- `http://localhost:8000/api/listings/` or `curl -H 'Accept: application/json; indent=4' http://127.0.0.1:8000/api/listings/`

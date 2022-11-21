@@ -7,6 +7,7 @@ from . import views
 router = SimpleRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'listings', views.ListingsViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
